@@ -1,15 +1,33 @@
-// Esta es la variable que usaremos como tamaño por defecto
-$defaultFontSize: 16;
+//fonts
 
-// Estos son los tamaños para las media-queries
+$font-title: 'Roboto Slab',serif;
+$font-text:'Roboto',sans-serif;
+
+// $defaultFontSize: 62.5%;
+// :root {
+
+//     font-size: 62.5%;
+// }
+
+
+// colors
+
+ $--white: #fff;
+ $--black: #000;
+ $--greyish-brown: #4a4a4a;
+ $--bright-orange: #f26002;
+ $--black-20: rgba(0, 0, 0, 0.2);
+ $--white-two: #f2f2f2;
+
+$--color-text-a: $--white;
+$--color-text-b: $--black;
+$--color-text-c: $--greyish-brown;
+$--color-text-d: $--bright-orange;
+$--color-background-1: $--white;
+$--color-background-2: $--white-two;
+$--color-background-3: $--bright-orange;
+
+//breakpoints
 
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1024px;
-
-// fonts
-// $font-main: 'Roboto', sans-serif;
-
-// colors
-// $color-text: #000;
-// $color-title: #000;
-// $color-background: #999;
