@@ -1,7 +1,11 @@
 @import 'core/variables';
 @import 'core/reset';
-@import 'core/mixins';
-@import 'core/animations';
+// @import 'core/mixins';
+// @import 'core/animations';
+@import 'layout/layout';
 @import 'layout/header';
+@import 'layout/hero';
+@import 'layout/section1';
+@import 'layout/section2';
 @import 'layout/footer';
-@import 'pages/index';
+// @import 'pages/index';
