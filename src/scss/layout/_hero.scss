@@ -13,7 +13,6 @@
 
 
     &-article {
-        transform: scale(0.75);
         color: $--color-text-a;
         text-align: center;
         
@@ -27,20 +26,20 @@
         &-p {
             
             font-family: $font-text;
-            font-size: $textFontSize;
+            font-size:$textFontSize;
             line-height: 1.19;
             
         }
 
     }
     &-btn {
-        // margin-top: 20px;
+         margin-top: 20px;
 
         &-img {
        
             height: 40px;
-             width: 40px;
-             padding: 10px;
+            width: 40px;
+            padding: 10px;
             border-radius: 50%;
             background-color: $--color-background-1;
 
