@@ -6,23 +6,41 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
+
+    @media all and (min-width: 1280px) {
+         padding: 20px 20% 20px 20%;
+    
+    }
     
     &-span {
         color: $--color-text-d;
         font-size: 1.4rem;
         margin: 10px 0;
+        @media all and (min-width: 768px) {
+                font-size: 1.6rem;
+                line-height: 30px;
+            }
     }
     &-article-h2 {
         color: $--color-text-b;
         font-family: $font-title;
         font-size: 2.4rem;
         margin-bottom: 10px;
+        @media all and (min-width: 768px) {
+                font-size: 3.2rem;
+                line-height: 45px;
+            }
     }
     &-article-p {
         color: $--color-text-c;
         font-size: $defaultFontSize;
         line-height: 30px;
         margin-bottom: 10px;
+        @media all and (min-width: 768px) {
+                font-size: 2rem;
+                line-height: 30px;
+                max-width: 900px;
+            }
     }
     
     &-btn {
@@ -32,7 +50,6 @@
             width: 160px;
             height: 45px;
             padding: 10px;
-
             border: solid 2px $--color-text-d;
             border-radius: 50px;
             text-align: center;
@@ -46,6 +63,6 @@
                     color: $--color-text-a;
                 }
         }
- }
+    }
 
 }

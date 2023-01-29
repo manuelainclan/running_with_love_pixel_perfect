@@ -7,6 +7,13 @@ align-items: center;
 padding-bottom: 40px;
 font-family: $font-text;
 line-height: 30px;
+
+.content {
+@media all and (min-width: 768px) {
+    display: flex;
+        flex-direction: row;
+    }}
+
     &-btn {
         position: relative;
         top: -20px;
@@ -17,7 +24,7 @@ line-height: 30px;
                 padding: 10px;
                 border-radius: 50%;
                 background-color: $--color-background-1;
-                animation: example 5s linear 2s infinite reverse;
+                animation: example 3s linear 2s infinite reverse;
                 animation-fill-mode: none;
     
             }
@@ -34,6 +41,8 @@ line-height: 30px;
             text-transform: uppercase;
             line-height: 30px;
             }   
+
+                       
         }
     &-div  {
         color: $--color-text-a;
