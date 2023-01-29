@@ -21,7 +21,17 @@
             
              font-family: $font-title;
              font-size: $h1FontSize;
-             line-height: 1.67;
+             line-height: 5rem;
+
+            @media all and (min-width: 768px) {
+                    font-size: 7.5rem;
+                    line-height: 10rem;
+                }
+            
+                @media all and (min-width: 1280px) {
+                    font-size: 10rem;
+                    line-height: 1.32rem;
+                }  
         }
         &-p {
             
