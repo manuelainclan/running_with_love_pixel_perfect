@@ -7,38 +7,34 @@
     flex-direction: column;
     padding: 20px;
 
-    @media all and (min-width: 1280px) {
+    @include desktop {
          padding: 20px 20% 20px 20%;
     
     }
     
     &-span {
         color: $--color-text-d;
-        font-size: 1.4rem;
+        @include t(1.4rem, 30px);
         margin: 10px 0;
-        @media all and (min-width: 768px) {
-                font-size: 1.6rem;
-                line-height: 30px;
+        @include tablet  {
+                @include t(1.6rem, 30px);
             }
     }
     &-article-h2 {
         color: $--color-text-b;
         font-family: $font-title;
-        font-size: 2.4rem;
+        @include t(2.4rem, 30px);
         margin-bottom: 10px;
-        @media all and (min-width: 768px) {
-                font-size: 3.2rem;
-                line-height: 45px;
+        @include tablet  {
+                @include t(3.2rem, 45px);
             }
     }
     &-article-p {
         color: $--color-text-c;
-        font-size: $defaultFontSize;
-        line-height: 30px;
+        @include t($defaultFontSize, 30px);
         margin-bottom: 10px;
-        @media all and (min-width: 768px) {
-                font-size: 2rem;
-                line-height: 30px;
+        @include tablet  {
+            @include t(2rem, 30px);
                 max-width: 900px;
             }
     }
@@ -55,7 +51,7 @@
             text-align: center;
             font-family: $font-textb;
             color: $--color-text-d;
-            font-size: 2rem;
+            @include t(2rem, 20px);
             text-decoration: none;
             transition: background-color .5s;
             &:hover {

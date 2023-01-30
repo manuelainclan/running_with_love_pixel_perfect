@@ -4,73 +4,68 @@ display: flex;
 flex-direction: column;
 justify-content: flex-end;
 align-items: center;
-padding-bottom: 40px;
+padding-bottom: 10px;
 font-family: $font-text;
-line-height: 30px;
+
 
 .content {
-@media all and (min-width: 768px) {
     display: flex;
-        flex-direction: row;
-    }}
-
-    &-btn {
-        position: relative;
-        top: -20px;
-       
-             &-img {
-                height: 45px;
-                width: 45px;
-                padding: 10px;
-                border-radius: 50%;
-                background-color: $--color-background-1;
-                animation: example 3s linear 2s infinite reverse;
-                animation-fill-mode: none;
-    
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+        @include tablet  {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 239px;
+            justify-content: center;
+            align-items: flex-start;
             }
-
-    }
-    &-nav{ 
-        text-align: center;
-        margin-bottom: 20px;
-        
-        &-a { 
-            font-size: $textFontSize;
-            color: $--color-text-a;
-            text-decoration: none;
-            text-transform: uppercase;
-            line-height: 30px;
-            }   
-
-                       
+    &-links {
+        @include tablet  {
+             display: flex;
+             flex-direction: row;
+             gap: 200px;
         }
-    &-div  {
-        color: $--color-text-a;
-        font-size: 1.4rem;
-        &-span {
-            display: block;
+        &-nav {
+            text-align: center;
+            margin-bottom: 20px;
+                @include tablet  {
+                    text-align: justify;
+                }
+            &-a {
+                @include t($textFontSize, 30px);
+                color: $--color-text-a;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
         }
-
     }
+  &-info {
+      text-align: center;
+      color: $--color-text-a;
+      @include t(1.4rem, 30px);
+      @include tablet {
+            text-align: justify;
+        }
+  }
+
 }
 
-@keyframes example {
-    0% {
-        transform: rotate(00deg);
-    }
-
-    25% {
-        transform: rotate(40deg);
-        
-    }
-    50% {
-        transform: rotate(80deg);
-        
-    }
-    75% {
-        transform: rotate(120deg);
-    }
-    100% {
-        transform: rotate(180deg);
-    }
+.btn {
+    position: relative;
+    top: -20px;
+   
+         &-img {
+            height: 45px;
+            width: 45px;
+            padding: 10px;
+            border-radius: 50%;
+            background-color: $--color-background-1;
+            animation: twist 1s linear 2s infinite alternate-reverse;
+            animation-fill-mode: none;
+        }
 }
+   
+  
+}
+

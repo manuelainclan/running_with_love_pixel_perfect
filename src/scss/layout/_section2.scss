@@ -8,18 +8,16 @@
 
     &-h2 {
         font-family: $font-title;
-        font-size: 2rem;
+        @include t(2rem, 30px);
         padding: 20px;
-        line-height: 30px;
-        @media all and (min-width: 768px) {
+        @include tablet  {
                 grid-column: 1/4;
-                font-size: 2.8rem;
-                line-height: 45px;
+                @include t(2.8rem, 45px);
             }
     }
 
     &-content{
-        @media all and (min-width: 768px) {
+        @include tablet  {
             display: grid;
             grid-auto-flow: column;
             padding: 0 10% 0 10%;
@@ -33,23 +31,18 @@
         grid-template-rows: 1fr;
         padding: 20px;
         margin: 0 20px;
-        line-height: 30px;
 
             &-h3{
                 font-family: $font-title;
-                font-size: $defaultFontSize;
-                @media all and (min-width: 768px) {
-                        
-                        font-size: 2.4rem;
-                        line-height: 30px;
+                @include t($defaultFontSize, 30px);
+                @include tablet  {
+                        @include t(2.4rem, 30px);
                     }
                 }
             &-p {
-                font-size: $defaultFontSize;
-                @media all and (min-width: 768px) {
-                
-                        font-size: 2rem;
-                        line-height: 30px;
+                @include t($defaultFontSize, 30px);
+                @include tablet  {
+                    @include t(2rem, 30px);
                     }
                 }
             }
@@ -57,9 +50,8 @@
 
   &-btn {
       margin-bottom: 40px;
-    @media all and (min-width: 768px) {
+    @include tablet  {
             grid-column: 1/4;
-    
         }
 
       &-a {
@@ -68,22 +60,17 @@
           height: 45px;
           padding: 10px;
           background-color: $--color-background-3;
-          color: $--color-text-a;
-          
-          
           border-radius: 50px;
+          border: solid 2px $--color-text-d;
+          color: $--color-text-a;
           text-align: center;
           font-family: $font-textb;
-          
-          font-size: 2rem;
+          @include t(2rem, 20px);
           text-decoration: none;
           transition: background-color .5s;
-
           &:hover {
             background-color:$--color-text-a;
-            border: solid 2px $--color-text-d;
             color: $--color-text-d;
-             
           }
       }
   }

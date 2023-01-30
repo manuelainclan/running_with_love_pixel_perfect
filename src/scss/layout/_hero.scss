@@ -12,61 +12,36 @@
     padding-bottom: 40px;
 
     &-article {
-    
         color: $--color-text-a;
         text-align: center;
         margin: 0 auto;
-        //dejo esto aquí porque así me quedaba exacto pero me parecía muy rígido
-        // width: 300px;  
-
-        // @media all and (min-width: 768px) {
-        //         width: 700px;
-        
-        //     }
-        // @media all and (min-width: 1280px) {
-        //         width: 1000px;     
-        
-        //     }
-    
-        &-h1 {
-             
-            font-family: $font-title;
-            font-size: $h1FontSize;
-            line-height: 50px;
-
-            @media all and (min-width: 768px) {
-                    
-                    font-size: 7.5rem;
-                    line-height: 100px;
-                    
-                    
-                }
-            
-            @media all and (min-width: 1280px) {
-                    
-                    font-size: 10rem;
-                    line-height: 132px;
-
-                }  
+        max-width: 300px;
+        @include tablet  {
+                max-width: 700px;
         }
+        @include desktop {            
+                max-width: 1000px;
+        }
+
+        &-h1 {  
+            font-family: $font-title;
+            @include t($h1FontSize, 50px);
+            @include tablet {
+                @include t(7.5rem, 100px);
+                                                
+            }
+            @include desktop {
+                @include t(10rem, 132px);
+                
+            }  
+    }
         &-p {
             
             font-family: $font-text;
-            font-size:$textFontSize;
-            line-height: 19px;
-
-            @media all and (min-width: 768px) {
-            
-                    font-size: 2.4rem;
-                    line-height: 28px;
-                }
-            
-            @media all and (min-width: 1280px) {
-                    font-size: 2.4rem;
-                    line-height: 28px;
-                    
-                }
-            
+            @include t($textFontSize, 19px);
+             @include tablet {
+                @include t(2.4rem, 28px);                   
+                } 
         }
 
     }
@@ -74,7 +49,6 @@
          margin-top: 20px;
 
         &-img {
-       
             height: 40px;
             width: 40px;
             padding: 10px;
