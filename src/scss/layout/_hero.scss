@@ -25,6 +25,7 @@
 
         &-h1 {  
             font-family: $font-title;
+            text-transform: uppercase;
             @include t($h1FontSize, 50px);
             @include tablet {
                 @include t(7.5rem, 100px);
