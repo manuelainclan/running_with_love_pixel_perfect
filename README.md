@@ -4,6 +4,8 @@ Hi there! My name is Manuela Inclán and I created this project based on a desig
 
 I hope you like it! 😊
 
+<img src="https://user-images.githubusercontent.com/121869164/234584163-cf4e1037-5eff-4310-87fb-b54b7e40e4b3.PNG" alt="" width="400"/>
+
 ## This exercise demonstrates that I have learned the following 📋:
 
 ### General
@@ -60,6 +62,10 @@ I used SASS to style the project; I really like its nesting capabilities as it a
 ### Want to take a look? 👁️‍🗨️
 
 This is how my partials look like:
+
+<img src="https://user-images.githubusercontent.com/121869164/234583949-392aae32-1fb5-494a-8ba7-e5001fed7652.PNG" alt="" width="250"/>
+<img src="https://user-images.githubusercontent.com/121869164/234584022-6c5c8a3b-7603-43b2-bc8a-db905230c1a4.PNG" alt="" width="250"/>
+
 
 ## Want to clone my repository? 🐑🐑
 
