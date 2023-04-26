@@ -2,6 +2,8 @@
 
 Hi there! My name is Manuela Inclán and I created this project based on a design provided by Zeplin. The website is responsive, pixel perfect, and built using **flex** and **grid** 🎨💻.
 
+You can see it live here! 👉 [running_with_love](https://manuelainclan.github.io/running_with_love_pixel_perfect/)
+
 I hope you like it! 😊
 
 <img src="https://user-images.githubusercontent.com/121869164/234584163-cf4e1037-5eff-4310-87fb-b54b7e40e4b3.PNG" alt="" width="400"/>
