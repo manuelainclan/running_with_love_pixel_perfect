@@ -1,46 +1,101 @@
-# Evaluación Final Módulo 1
+# HTML and CSS: Running with love 🧡
 
-Holis! Me llamo Manuela Inclán y este es mi ejercicio de Evaluación Final del Módulo 1 del Bootcamp de Adalab. ¿Y de qué me evaluan en este Módulo 1? Pues me han pedido maquetar una web a partir de un diseño dado para demostrar que he aprendido HTML, CSS/Sass, a trabajar con control de versiones a través de Git.
+Hi there! My name is Manuela Inclán and I created this project based on a design provided by Zeplin. The website is responsive, pixel perfect, and built using **flex** and **grid** 🎨💻.
 
-## Este ejercicio demuestra que he aprendido a:
+I hope you like it! 😊
+
+## This exercise demonstrates that I have learned the following 📋:
 
 ### General
 
-- Usar una estructura adecuada de ficheros y carpetas para un proyecto web, y enlazar bien los
-  distintos ficheros.
-- Uso de control de versiones con ramas para manejar un proyecto de código.
+- Use an appropriate file and folder structure for a web project, and properly link different files.
+- Use **version control** with branches to manage a code project.
 
-### HTML
+### **HTML**
 
-- Tener el código perfectamente indentado.
-- Crear código HTML con sintaxis correcta, bien estructurado.
-- Usar etiquetas HTML semánticas adecuadas para cada pieza de contenido.
+- Write perfectly indented HTML code.
+- Create well-structured HTML code with correct syntax.
+- Use appropriate HTML **semantic tags** for each piece of content.
 
-### CSS / Sass
+### **CSS / Sass**
 
-- Tener el código perfectamente indentado.
-- Crear código Sass con sintaxis correcta, bien estructurado.
-- Usar características de Sass como variables, anidación y parciales.
-- Usar código CSS que usa de forma intensiva selectores de clase. No usar selectores de etiqueta ni de id.
-- Usar selectores de clase en inglés.
-- Usar el modelo de caja de CSS de forma adecuada para especificar tamaño, relleno y márgenes.
-- Usar estilos de texto y fondo para distintos tipos de elementos.
-- Usar flexbox de forma adecuada para organizar elemento en cajas flexibles.
-- Usar media queries para que los diseños se ajusten a distintos tamaños de dispositivo.
-- Usar posicionamiento para emplazar elementos fijos y absolutos en la pantalla.
-- Usar CSS grid para emplazar elementos usando una rejilla.
-- Usar transiciones CSS para dotar de dinamismo a un proyecto web.
+- Write perfectly indented CSS code.
+- Create well-structured Sass code with correct syntax.
+- Use Sass features such as **variables**, **nesting**, and **partials**.
+- Use CSS code that heavily utilizes **class selectors**, not tag or id selectors.
+- Use English class selectors.
+- Use the CSS **box model** appropriately to specify size, padding, and margins.
+- Use **text and background styles** for different types of elements.
+- Use **flexbox** appropriately to organize elements in flexible boxes.
+- Use **media queries** to adjust designs to different device sizes.
+- Use **positioning** to place fixed and absolute elements on the screen.
+- Use CSS **grid** to place elements using a grid.
+- Use CSS **transitions** to add dynamism to a web project.
 
-### Además en esta evaluación me he querido enfocar en aprender a:
+### Additionally, I focused on learning how to:
 
-- Usar animaciones
-- Usar mixins
-- Usar variables
+- Use **animations** 🎬
+- Use **mixins** 🍹
+- Use **variables** 💻
 
-### Me hubiese gustado practicar más:
+## Tech 💻
 
-- Formularios
-- Tablas
-- Links
+Starring:
+[Adalab Web Starter Kit](https://github.com/Adalab/adalab-web-starter-kit) - An amazing template that allowed me to use a local host, SASS, HTML Template Engines and gulp. For more information you may visit [the Kit repository](https://github.com/Adalab/adalab-web-starter-kit)
 
-Espero que se aprecie el tiempo invertido en este ejercicio :D
+### Built with 🔨
+
+- Visual Code Studio: as code editor
+- HTML
+- SASS
+- GULP
+
+## Development ⌨️
+
+To carry out this project, I followed the guidelines set by the designer in Zeplin.
+I sketched out a diagram with pencil and paper to organize myself effectively. This allowed me to think about the best way to divide the project into partials.
+I started the design with a Mobile First approach and then added the necessary mediaqueries to make the design adapt to different devices.
+I used SASS to style the project; I really like its nesting capabilities as it allows me to work in a more organized and efficient manner.
+
+### Want to take a look? 👁️‍🗨️
+
+This is how my partials look like:
+
+## Want to clone my repository? 🐑🐑
+
+Remember that this repository was done using the [Adalab Web Starter Kit](https://github.com/Adalab/adalab-web-starter-kit) so I highly recommend to visit the link provided before running the proyect.
+
+<sub>[Node.js](https://nodejs.org/) and Gulp are required <sub/>
+
+After you clone the repository you must:
+
+1. Install dependencies. You will only have to do this once.
+
+```sh
+npm install
+```
+
+2. Start the proyect. This must be done everytime you code and will open a local host that will update in real time
+
+```sh
+npm start
+```
+
+3.  If as me, you happen to use GitHub Pages you may send your code to production using
+
+```sh
+npm run push-docs
+```
+
+<sub>PD: You will have to set your GitHub Page as master branch /docs folder.
+For Gulp installing you may run
+
+```sh
+npm -g install gulp-cli
+```
+
+<sub/>
+
+## License
+
+This project is licensed under the MIT License.
